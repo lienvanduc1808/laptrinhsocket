@@ -1,2 +1,16 @@
-﻿  server.cpp
-  server.vcxproj -> C:\Users\lien van duc\source\repos\server\Debug\server.exe
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  stdafx.cpp
+cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  ServerDlg.cpp
+C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\server\server\ServerDlg.cpp(111,2): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\server\server\ServerDlg.cpp(153,11): warning C4996: 'WSAAsyncSelect': Use WSAEventSelect() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\server\server\ServerDlg.cpp(224,7): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\server\server\ServerDlg.cpp(253,24): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\server\server\ServerDlg.cpp(268,24): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\server\server\ServerDlg.cpp(305,7): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\server\server\ServerDlg.cpp(334,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Server.cpp
+  Generating Code...
+  LINK : C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\server\Debug\server.exe not found or not built by the last incremental link; performing full link
+Server.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  server.vcxproj -> C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\server\Debug\server.exe

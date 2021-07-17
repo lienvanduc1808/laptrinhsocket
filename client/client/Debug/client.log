@@ -1,2 +1,12 @@
-﻿  client.cpp
-  client.vcxproj -> C:\Users\lien van duc\source\repos\client\Debug\client.exe
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  stdafx.cpp
+cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  ClientDlg.cpp
+C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\client\client\ClientDlg.cpp(119,2): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\client\client\ClientDlg.cpp(234,28): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\client\client\ClientDlg.cpp(240,11): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\client\client\ClientDlg.cpp(261,2): warning C4996: 'WSAAsyncSelect': Use WSAEventSelect() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  Client.cpp
+  Generating Code...
+Client.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  client.vcxproj -> C:\Users\lien van duc\OneDrive\Documents\GitHub\laptrinhsocket\client\Debug\client.exe
