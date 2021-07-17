@@ -1,20 +1,84 @@
-// client.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Client.cpp : Defines the class behaviors for the application.
 //
 
-#include <iostream>
+#include "stdafx.h"
+#include "Client.h"
+#include "ClientDlg.h"
 
-int main()
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#endif
+
+
+// CClientApp
+
+BEGIN_MESSAGE_MAP(CClientApp, CWinApp)
+	ON_COMMAND(ID_HELP, &CWinApp::OnHelp)
+END_MESSAGE_MAP()
+
+
+// CClientApp construction
+
+CClientApp::CClientApp()
 {
-    std::cout << "Hello World!\n";
+	// TODO: add construction code here,
+	// Place all significant initialization in InitInstance
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+// The one and only CClientApp object
+
+CClientApp theApp;
+
+
+// CClientApp initialization
+
+BOOL CClientApp::InitInstance()
+{
+	// InitCommonControlsEx() is required on Windows XP if an application
+	// manifest specifies use of ComCtl32.dll version 6 or later to enable
+	// visual styles.  Otherwise, any window creation will fail.
+	INITCOMMONCONTROLSEX InitCtrls;
+	InitCtrls.dwSize = sizeof(InitCtrls);
+	// Set this to include all the common control classes you want to use
+	// in your application.
+	InitCtrls.dwICC = ICC_WIN95_CLASSES;
+	InitCommonControlsEx(&InitCtrls);
+
+	CWinApp::InitInstance();
+
+	if (!AfxSocketInit())
+	{
+		AfxMessageBox(IDP_SOCKETS_INIT_FAILED);
+		return FALSE;
+	}
+
+	AfxEnableControlContainer();
+
+	// Standard initialization
+	// If you are not using these features and wish to reduce the size
+	// of your final executable, you should remove from the following
+	// the specific initialization routines you do not need
+	// Change the registry key under which our settings are stored
+	// TODO: You should modify this string to be something appropriate
+	// such as the name of your company or organization
+	SetRegistryKey(_T("Local AppWizard-Generated Applications"));
+
+	CClientDlg dlg;
+	m_pMainWnd = &dlg;
+	INT_PTR nResponse = dlg.DoModal();
+	if (nResponse == IDOK)
+	{
+		// TODO: Place code here to handle when the dialog is
+		//  dismissed with OK
+	}
+	else if (nResponse == IDCANCEL)
+	{
+		// TODO: Place code here to handle when the dialog is
+		//  dismissed with Cancel
+	}
+
+	// Since the dialog has been closed, return FALSE so that we exit the
+	//  application, rather than start the application's message pump.
+	return FALSE;
+}
